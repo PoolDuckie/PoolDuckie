@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+:root {
+    --primary-blue: #007BFF;
+    --white: #FFFFFF;
+    --aqua: #00CFC1;
+    --light-gray: #F8F9FA;
+    --navy-blue: #004085;
+    --green: #28A745;
+    --dark-gray: #6C757D;
+  }
+  /* Global font settings */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    background-color: var(--light-gray);
+    color: var(--navy-blue);
+    
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  .logo {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 2.3rem;
+    text-align: left;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+
+
+  button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF; /* White text color */
+    background-color: #007BFF; /* Primary blue background */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    text-align: center; /* Center text alignment */
+  }
+  
+  /* Primary button */
+  .button-primary {
+    background-color: #28A745; /* Green background */
+  }
+  
+  .button-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Secondary button */
+  .button-secondary {
+    background-color: #00CFC1; /* Aqua background */
+    color: #004085; /* Navy blue text color */
+  }
+  
+  .button-secondary:hover {
+    background-color: #00B4A1; /* Darker aqua on hover */
+  }
+  
+  /* Disabled button */
+  button:disabled, .button-primary:disabled, .button-secondary:disabled {
+    background-color: #E0E0E0; /* Light gray background */
+    color: #6C757D; /* Dark gray text color */
+    cursor: not-allowed; /* Not-allowed cursor */
+    opacity: 0.6; /* Reduced opacity */
+  }
+
+  /* Header */
+header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header a {
+    color: var(--white);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  header a:hover {
+    color: var(--aqua);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+
+    /* Navigation */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  
+    /* Hero */
+.hero {
+        background-image: url('../images/Lap.png'); 
+        background-size: cover;
+        background-position: center;
+        height: 80vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+}
+    .hero-content {
+        max-width: 600px; /* Adjust width as needed */
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .hero-content button{
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+  
+
+.hero h1, .hero p {
+    color: white;
+    text-shadow: 
+        1px 1px 0 rgba(0, 0, 0, 0.5), 
+        -1px -1px 0 rgba(0, 0, 0, 0.5), 
+        1px -1px 0 rgba(0, 0, 0, 0.5), 
+        -1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Service Overview */
+.cards{
+    display: flex;
+}
+
+.card{
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--navy-blue);
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    
+}
+.card:hover{
+    background-color: var(--aqua);
+    color: var(--navy-blue);
+    cursor: pointer;
+}
+
+card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.whychoose{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+}
+.whychooseinfo{
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--navy-blue);
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+}
+.whychooseinfo:hover{
+    background-color: var(--aqua);
+    color: var(--navy-blue);
+    cursor: pointer;
+    
+}
+
+.whychooseimg:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--navy-blue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  /* Sections */
+  .section-white {
+    background-color: var(--white);
+    padding: 2rem;
+  }
+  
+  .section-aqua {
+    background-color: var(--aqua);
+    padding: 2rem;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  /* Footer */
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1rem;
+    border-top: 1px solid var(--white);
+ 
+  }
+  .quickLinks{
+    padding: 1rem;
+  }
+
+.footercontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    gap: 3rem;
+    margin-bottom: auto;
+}
+  
+  footer a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  footer a:hover {
+    color: var(--aqua);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }  
+  .newsletter{
+    border: 1px solid var(--white);
+    
+  }
+  .copy{
+    text-align: center;
+  }
+  .social{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+    
+  }
+  .social-fb{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .social-fb:hover{
+    background-image: url(../images/facebook-color.png);
+    width: 40px;
+    height: 40px;
+  }
+  .social-ig{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .social-ig:hover{
+    background-image: url(../images/instagram-color.png);
+    width: 40px;
+    height: 40px;
+}
+    
+
+  /* Styling for text boxes */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333; /* Dark gray text color */
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #CCC; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding inside the text box */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    width: 100%; /* Full-width text boxes */
+    margin-bottom: 1rem; /* Space below text boxes */
+  }
+  
+  /* Focus state for text boxes */
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add a subtle shadow for focus */
+  }
+  
+  /* Disabled text box */
+  input[type="text"]:disabled, input[type="email"]:disabled, input[type="password"]:disabled, textarea:disabled {
+    background-color: #F8F9FA; /* Light gray background */
+    border-color: #E0E0E0; /* Gray border */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+  }
